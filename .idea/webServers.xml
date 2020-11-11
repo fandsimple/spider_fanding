@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="de6d4b0e-c7e4-4e61-8ebb-b60cef5b7fe6" name="spider_qiming">
+        <fileTransfer rootFolder="/root/cnnvd/code/spider_qiming" accessType="SFTP" host="192.168.186.130" port="22" sshConfigId="c1ca56f6-cb80-418a-991d-598524e069fa" sshConfig="root@192.168.186.130:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

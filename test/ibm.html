@@ -1,0 +1,650 @@
+<!DOCTYPE html>\n
+<html lang="en-US">\n
+<head>\n
+    <meta charset="utf-8">
+    \n\n \n\n        <!-- IBM: BASE -->\n\n
+    <script src="//1.www.s81c.com/common/v18/js/www.js"></script>
+    \n\n \n\t<!-- This site is optimized with the Yoast SEO plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->
+    \n\t<title>IBM PSIRT Blog</title>\n\t
+    <meta name="description" content="IBM Product Security Incident Response Blog"/>
+    \n\t
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+    \n\t
+    <link rel="canonical" href="https://p1.blogs.prd.ibm.events.ibm.com/blogs/psirt/"/>
+    \n\t
+    <link rel="next" href="https://p1.blogs.prd.ibm.events.ibm.com/blogs/psirt/page/2/"/>
+    \n\t
+    <meta property="og:locale" content="en_US"/>
+    \n\t
+    <meta property="og:type" content="website"/>
+    \n\t
+    <meta property="og:title" content="IBM PSIRT Blog"/>
+    \n\t
+    <meta property="og:url" content="https://www.ibm.com/blogs/psirt/"/>
+    \n\t
+    <meta property="og:site_name" content="IBM PSIRT Blog"/>
+    \n\t
+    <meta name="twitter:card" content="summary_large_image"/>
+    \n\t
+    <script type="application/ld+json" class="yoast-schema-graph">
+        {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.ibm.com/blogs/psirt/#website","url":"https://www.ibm.com/blogs/psirt/","name":"IBM PSIRT Blog","description":"","potentialAction":[{"@type":"SearchAction","target":"https://www.ibm.com/blogs/psirt/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"CollectionPage","@id":"https://p1.blogs.prd.ibm.events.ibm.com/blogs/psirt/#webpage","url":"https://p1.blogs.prd.ibm.events.ibm.com/blogs/psirt/","name":"IBM PSIRT Blog","isPartOf":{"@id":"https://www.ibm.com/blogs/psirt/#website"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://p1.blogs.prd.ibm.events.ibm.com/blogs/psirt/"]}]}]}
+    </script>
+    \n\t<!-- / Yoast SEO plugin. --> \n\n\n
+    <link rel=\'dns-prefetch\' href=\'//s.w.org\'/>
+    \n
+    <link rel=\'stylesheet\' id=\'wp-block-library-css\'
+          href=\'https://www.ibm.com/blogs/psirt/wp-includes/css/dist/block-library/style.min.css\' type=\'text/css\'
+          media=\'all\'/>
+    \n
+    <link rel=\'stylesheet\' id=\'site_css-css\'
+          href=\'https://www.ibm.com/blogs/psirt/wp-content/themes/ibmNorthstarDev/assets/css/style.css\'
+          type=\'text/css\' media=\'all\'/>
+    \n
+    <link rel="https://api.w.org/" href="https://www.ibm.com/blogs/psirt/wp-json/"/>
+    <script type="text/javascript">\r\n
+    var ajaxurl = "https://www.ibm.com/blogs/psirt/wp-admin/admin-ajax.php";\r\n         </script>
+    \n        <!-- ============================================================ -->\r\n        <!-- START: v18_head -->
+    \r\n \r\n
+    <link rel="alternate" type="application/atom+xml" title="IBM PSIRT Blog"
+          href="https://www.ibm.com/blogs/psirt/feed/atom/"/>
+    \r\n\r\n \r\n
+    <link rel="icon" href="//www.ibm.com/favicon.ico">
+    \r\n\r\n
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    \r\n\r\n
+    <meta name="geo.country" content="US"/>
+    \r\n
+    <meta name="dcterms.date" content="2020-09-25"/>
+    \r\n
+    <meta name="dcterms.rights" content="© Copyright IBM Corp. 2020"/>
+    \r\n
+    <meta property="fb:pages" content=""/>
+    \r\n
+    <script>\r\n
+    digitalData = {\r\n
+    page: {\r\n
+        category: {\r\n
+            primaryCategory: \
+            '\',\r\n                        ibm: {\r\n                                globalBrandTableL10: \'\',\r\n                                gbt10: \'\',\r\n                                globalBrandTableL17: \'\',\r\n                                gbt17: \'\',\r\n                                globalBrandTableL20: \'\',\r\n                                gbt20: \'\',\r\n                                globalBrandTableL30: \'\',\r\n                                gbt30: \'\',\r\n                              }\r\n                    },\r\n                    pageInfo: {\r\n                        effectiveDate: \'2020-09-25\',\r\n                        expiryDate: \'2025-09-25\',\r\n                        language: \'en-US\',\r\n                        publishDate: \'2020-09-25\',\r\n                        publisher: \'IBM Corporation\',\r\n                        version: \'v18\',\r\n                        ibm: {\r\n                            contentDelivery: \'ibm.com/blogs\',\r\n                            contentProducer: \'ibmNorthstarDev 1.7.10.8\',\r\n                            country: \'US\',\r\n                            ibmDynamicCm: false,\r\n                            industry: \'ZZ\',\r\n                            owner: \'Ali Kaba/Durham/IBM@IBMUS,Kay Healan/Raleigh/IBM@IBMUS\',\r\n                            siteID: \'\',\r\n                            subject: \'IBM000\',\r\n                            type: \'CT904\',\r\n                            }\r\n                        }\r\n                    }\r\n                };\r\n        </script>
+    \r\n\r\n
+    <link href="//1.www.s81c.com/common/v18/css/www.css" rel="stylesheet"/>
+    \r\n
+    <link href="//1.www.s81c.com/common/v18/css/forms.css" rel="stylesheet"/>
+    \r\n
+    <link href="//1.www.s81c.com/common/v18/css/tables.css" rel="stylesheet"/>
+    \r\n\r\n \r\n
+    <script type="text/javascript">\r\n
+    IBMCore.common.util.config.set({\r\n
+    survey: {
+        global_percent: 5
+    }
+    ,\r\n
+    footer: {\r\n
+        type: "alternate",\r\n
+        socialLinks: {
+            enabled:false
+        }\r\n
+    }
+    ,\r\n
+    scrolltracker:{
+        enabled:!1
+    }
+    ,\r\n
+    masthead: {\r\n
+        type: \
+        'alternate\'                }\r\n            });\r\n        </script>
+    \r\n\r\n        <!-- IBM: FORMS -->\r\n\r\n
+    <script src="//1.www.s81c.com/common/v18/js/forms.js"></script>
+    \r\n\r\n        <!-- IBM: TABLES -->\r\n\r\n
+    <script src="//1.www.s81c.com/common/v18/js/tables.js"></script>
+    \r\n\r\n        <!-- IBM: METRICS -->\r\n
+    <script src="//1.www.s81c.com/common/stats/ida_stats.js"></script>
+    \r\n\r\n\r\n
+    <script src=\'//1.www.s81c.com/common/v18/js/masonry.js\'></script>
+    \r\n\r\n\r\n\r\n \r\n \r\n \r\n                 <!-- END: v18_head -->\r\n
+    <!-- ============================================================ -->\r\n\n
+</head>
+\n\n
+<body id="ibm-com" class="home blog ibm-type" itemscope itemtype="http://schema.org/WebPage">\n\n\n
+<div id="fb-root"></div>
+\n
+<script>(function (d, s, id) {\n
+    var js, fjs = d.getElementsByTagName(s)[0];\n
+    if (d.getElementById(id)) return;\n
+    js = d.createElement(s);
+    js.id = id;\n
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";\n
+    fjs.parentNode.insertBefore(js, fjs);\n
+}(document, \'script\', \'facebook-jssdk\'));</script>
+\n\n
+<div id="ibm-top" class="ibm-landing-page page">\n\n
+    <div id="ibm-masthead" role="banner" aria-label="IBM">\r\n
+        <div id="ibm-mast-options">\r\n
+            <ul role="toolbar" aria-labelledby="ibm-masthead">\r\n
+                <li id="ibm-geo" role="presentation"><a href="//www.ibm.com/planetwide/select/selector.html"
+                                                        role="button"
+                                                        aria-label="United states selected - Choose a country">United
+                    States</a></li>
+                \r\n
+            </ul>
+            \r\n
+        </div>
+        \r\n
+        <div id="ibm-universal-nav">\r\n
+            <nav role="navigation" aria-label="IBM">\r\n\r\n
+                <div id="ibm-home"><a href="//www.ibm.com/us/en/">IBM®</a></div>
+                \r\n
+                <ul id="ibm-menu-links" role="toolbar" aria-label="Site map">\r\n
+                    <li><a href="//www.ibm.com/sitemap/us/en/">Site map</a></li>
+                    \r\n
+                </ul>
+                \r\n
+            </nav>
+            \r\n
+            <div id="ibm-search-module" role="search" aria-labelledby="ibm-masthead">\r\n
+                <form id="ibm-search-form" action="//www.ibm.com/Search/" method="get">\r\n <label for="q"></label>\r\n
+                    <input type="text" maxlength="100" value="" placeholder="Search" name="q" id="q"
+                           aria-label="Search"/>\r\n <input type="hidden" value="18" name="v"/>\r\n <input type="hidden"
+                                                                                                           value="utf"
+                                                                                                           name="en"/>\r\n
+                    <input type="hidden" value="en" name="lang"/>\r\n <input type="hidden" value="us" name="cc"/>\r\n
+                    <span class="ibm-search-scope"><input type="checkbox" name="s" value="customsearch" checked
+                                                          id="scopeoption"> <label for="scopeoption">Search within IBM PSIRT Blog</span>\r\n
+                    <input type="submit" id="ibm-search" class="ibm-btn-search" value="Submit"/>\r\n
+                </form>
+                \r\n
+                <form class="ibm-hide" id="customSearchForm" action="https://www.ibm.com/blogs/psirt/" method="get">\r\n
+                    <input type="text" name="s">\r\n
+                </form>
+                \r\n
+            </div>
+            \r\n
+        </div>
+        \r\n
+    </div>
+    \r\n
+    <header role="banner" aria-labelledby="ibm-pagetitle-h1">\r\n \r\n
+        <div class="ibm-sitenav-menu-container">\r\n
+            <!-- The code below is where you edit the blog title that appears in menu navigation -->\r\n
+            <div class="ibm-sitenav-menu-name"><a class="ibm-bold" href="https://www.ibm.com/blogs/psirt/">IBM PSIRT
+                Blog</a></div>
+            \r\n
+            <div class="ibm-sitenav-menu-list">\r\n\r\n
+                <ul role="menubar">\r\n\r\n
+                    <li role="presentation"><a role="menuitem" href="https://www.ibm.com/blogs/psirt">Home</a></li>
+                    \r\n
+                    <li role="presentation"><a role="menuitem" href="https://www.ibm.com/blogs/psirt/about/">About
+                        Us</a></li>
+                    \r\n
+                    <li role="presentation"><a role="menuitem"
+                                               href="https://www.ibm.com/blogs/psirt/ibm-acknowledgement/">Acknowledgement</a>
+                    </li>
+                    \r\n
+                    <li role="presentation"><a role="menuitem"
+                                               href="https://www.ibm.com/blogs/psirt/archive/">Archive</a></li>
+                    \r\n
+                    <li role="presentation" class="ibm-haschildlist"><span role="menuitem">Category</span>\r\n
+                        <ul role="menu">\r\n\r\n
+                            <li><a href="https://www.ibm.com/blogs/psirt/tag/psirthigh/">High Severity</a></li>
+                            \r\n
+                            <li><a href="https://www.ibm.com/blogs/psirt/tag/psirtmedium/">Medium Severity</a></li>
+                            \r\n
+                            <li><a href="https://www.ibm.com/blogs/psirt/tag/psirtlow/">Low Severity</a></li>
+                            \r\n
+                        </ul>
+                        \r\n
+                    </li>
+                    \r\n
+                </ul>
+                \r\n
+            </div>
+            \r\n
+        </div>
+        \r\n
+        <div id="ibm-leadspace-head" class="ibm-alternate ibm-textcolor-white-core" \r\n
+             data-desktop-lg-retina="https://www.ibm.com/blogs/psirt/wp-content/uploads/2017/03/Secure_Engineering_Leadspace.jpg"
+             \r\n
+             data-desktop-lg="https://www.ibm.com/blogs/psirt/wp-content/uploads/2017/03/Secure_Engineering_Leadspace-1440x375.jpg"
+             \r\n
+             data-desktop-retina="https://www.ibm.com/blogs/psirt/wp-content/uploads/2017/03/Secure_Engineering_Leadspace.jpg"
+             \r\n
+             data-desktop="https://www.ibm.com/blogs/psirt/wp-content/uploads/2017/03/Secure_Engineering_Leadspace-1200x375.jpg"
+             \r\n
+             data-tablet-retina="https://www.ibm.com/blogs/psirt/wp-content/uploads/2017/03/Secure_Engineering_Leadspace-1200x375.jpg"
+             \r\n
+             data-tablet="https://www.ibm.com/blogs/psirt/wp-content/uploads/2017/03/Secure_Engineering_Leadspace-780x375.jpg"
+             \r\n
+             data-mobile-retina="https://www.ibm.com/blogs/psirt/wp-content/uploads/2017/03/Secure_Engineering_Leadspace-780x375.jpg"
+             \r\n
+             data-mobile="https://www.ibm.com/blogs/psirt/wp-content/uploads/2017/03/Secure_Engineering_Leadspace-380x375.jpg"
+             \r\n
+             style="background: url(https://www.ibm.com/blogs/psirt/wp-content/uploads/2017/03/Secure_Engineering_Leadspace-1440x375.jpg) no-repeat 0 0 / cover #fff;">
+            \r\n
+            <div id="ibm-leadspace-body">\r\n
+                <div class="ibm-columns ">\r\n
+                    <div class="ibm-col-2-1 ">\r\n
+                        <div class="ibm-padding-content">\r\n <h1 class="ibm-h1 ibm-light"><br/>IBM Product Security
+                            Incident Response</h1>\r\n <h2 class="ibm-h2 ibm-light"></h2>\r\n <h4
+                                class="ibm-h4 \'\'"></h4>\r\n\r\n\r\n \r\n
+                        </div>
+                        \r\n
+                    </div>
+                    \r\n
+                </div>
+                \r\n
+            </div>
+            \r\n \r\n
+            <nav role="navigation" aria-labelledby="ibm-pagetitle-h1">\r\n\r\n</nav>
+            \r\n          <!-- CONTENT_NAV_END -->\r\n
+    </header>
+    \n\n\n\r\n
+    <main role="main" aria-labelledby="ibm-pagetitle-h1">\n
+        <div id="ibm-pcon">\n
+            <div id="ibm-content">\n
+                <div id="ibm-content-body ibm-padding-top-0">\n
+                    <div id="ibm-content-main">\r\n
+                        <div id="content">\r\n\r\n\r\n\r\n
+                            <div class="ibm-band ibm-background-white-core ibm-padding-top-2">\r\n
+                                <div class="ibm-columns">\r\n
+                                    <div class="ibm-col-1-1" data-widget="setsameheight" data-items=".carouselPost">
+                                        \r\n\r\n
+                                        <div data-widget="carousel" data-autoplay="true" data-randomfirst="false">\r\n
+                                            <div class="ibm-padding-bottom-1">\r\n
+                                                <div class="ibm-textcolor-white-core ibm-padding-content" data-post-id-
+                                                "61849"\r\n style="background-image:
+                                                url(\'https://www.ibm.com/blogs/psirt/wp-content/uploads/2017/03/parallax-planet.jpg\');
+                                                background-size: cover; background-position: center center;">\r\n
+                                                <div class="ibm-columns ibm-padding-content ibm-padding-top-0 ibm-padding-bottom-0">
+                                                    \r\n
+                                                    <div class="ibm-col-2-1 ibm-padding-content ibm-padding-top-0 ibm-padding-bottom-0 ">
+                                                        \r\n
+                                                        <div class="carouselPost">\r\n \r\n
+                                                            <h2 class="ibm-h1 ibm-light ibm-padding-bottom-2">Apache
+                                                                Struts Jakarta Multi-part Parser Code Execution
+                                                                (CVE-2017-5638)</h1>\r\n
+                                                                <article
+                                                                        class="ibm-padding-bottom-1 ibm-textcolor-white-core">
+                                                                    On March 6, 2017 a vulnerability in the Apache
+                                                                    Struts Jakarta Multi-part parser code execution was
+                                                                    reported by Apache. IBM is analyzing its products to
+                                                                    determine which ones may be affected by this
+                                                                    vulnerability. Affected IBM products will be issuing
+                                                                    mitigations and/or fixes as soon as possible. Please
+                                                                    actively monitor both your IBM Support Portal [&hellip;]
+                                                                </article>
+                                                                \r\n
+                                                                <p class="ibm-light ibm-button-link ibm-padding-bottom-0">
+                                                                    <a href="https://www.ibm.com/blogs/psirt/apache-struts-jakarta-multi-part-parser-code-execution/"
+                                                                       class="ibm-btn-pri "><span
+                                                                            class="">Read More</span></a></p>\r\n
+                                                        </div>
+                                                        \r\n
+                                                    </div>
+                                                    \r\n
+                                                </div>
+                                                \r\n
+                                            </div>
+                                            \r\n
+                                        </div>
+                                        \r\n
+                                    </div>
+                                    \r\n \r\n
+                                </div>
+                                \r\n
+                            </div>
+                            \r\n
+                        </div>
+                        \r\n\r\n
+                        <div id="story-space ibm-padding-top-2" class="ibm-columns">
+                            <div class="ibm-col-6-4">\n
+                                <div class="ibm-columns">\n
+                                    <div class="ibm-col-1-6 post post" data-post-id-
+                                    "82683">\n <h4 class="ibm-h3 ibm-padding-top-1"><a class="ibm-blog__header-link"
+                                                                                       href="https://www.ibm.com/blogs/psirt/security-bulletin-insecure-use-of-innerhtml-or-outerhtml-in-ibm-enterprise-records/"><span
+                                            class="ibm-textcolor-default">Security Bulletin: Insecure Use of InnerHTML or OuterHTML in IBM Enterprise Records</span></a>
+                                    </h4>\n <h4 class="ibm-medium">\n Sep 25, 2020 8:00 pm EDT &#124; <a
+                                            href="https://www.ibm.com/blogs/psirt/category/severity-med/">Medium
+                                        Severity</a></h4>\n\n <p class="ibm-medium ibm-padding-bottom-1">It also is the
+                                        case that we internally create the text to go into the HTML, not an external
+                                        entity.<a
+                                                href=\'https://www.ibm.com/blogs/psirt/security-bulletin-insecure-use-of-innerhtml-or-outerhtml-in-ibm-enterprise-records/\'
+                                                target=\'_self\'> ...read more</a></p>\n
+                                </div>
+                                \n
+                            </div>
+                            \n
+                            <div class="ibm-rule">
+                                <hr>
+                            </div>
+                            \n\n\n
+                            <div class="ibm-columns">\n
+                                <div class="ibm-col-1-6 post post" data-post-id-
+                                "82680">\n <h4 class="ibm-h3 ibm-padding-top-1"><a class="ibm-blog__header-link"
+                                                                                   href="https://www.ibm.com/blogs/psirt/security-bulletin-dynamically-constructed-href-attribute-in-ibm-enterprise-records/"><span
+                                        class="ibm-textcolor-default">Security Bulletin: Dynamically constructed href attribute in IBM Enterprise Records</span></a>
+                                </h4>\n <h4 class="ibm-medium">\n Sep 25, 2020 8:00 pm EDT &#124; <a
+                                        href="https://www.ibm.com/blogs/psirt/category/severity-med/">Medium
+                                    Severity</a></h4>\n\n <p class="ibm-medium ibm-padding-bottom-1">The place where
+                                    this happens is believed to be dead code, but we do not want to just start deleting
+                                    things in the code without sufficient time to test.<a
+                                            href=\'https://www.ibm.com/blogs/psirt/security-bulletin-dynamically-constructed-href-attribute-in-ibm-enterprise-records/\'
+                                            target=\'_self\'> ...read more</a></p>\n
+                            </div>
+                            \n
+                        </div>
+                        \n
+                        <div class="ibm-rule">
+                            <hr>
+                        </div>
+                        \n\n\n
+                        <div class="ibm-columns">\n
+                            <div class="ibm-col-1-6 post post" data-post-id-
+                            "82677">\n <h4 class="ibm-h3 ibm-padding-top-1"><a class="ibm-blog__header-link"
+                                                                               href="https://www.ibm.com/blogs/psirt/security-bulletin-apache-commons-codec-vulnerability-affects-ibm-control-center/"><span
+                                    class="ibm-textcolor-default">Security Bulletin: Apache Commons Codec Vulnerability Affects IBM Control Center</span></a>
+                            </h4>\n <h4 class="ibm-medium">\n Sep 25, 2020 8:00 pm EDT &#124; <a
+                                    href="https://www.ibm.com/blogs/psirt/category/severity-high/">High Severity</a>
+                            </h4>\n\n <p class="ibm-medium ibm-padding-bottom-1">Apache Commons Codec could allow a
+                                remote attacker to obtain sensitive information, caused by the improper validation of
+                                input.<a
+                                        href=\'https://www.ibm.com/blogs/psirt/security-bulletin-apache-commons-codec-vulnerability-affects-ibm-control-center/\'
+                                        target=\'_self\'> ...read more</a></p>\n
+                        </div>
+                        \n
+                    </div>
+                    \n
+                    <div class="ibm-rule">
+                        <hr>
+                    </div>
+                    \n\n\n
+                    <div class="ibm-columns">\n
+                        <div class="ibm-col-1-6 post post" data-post-id-
+                        "82674">\n <h4 class="ibm-h3 ibm-padding-top-1"><a class="ibm-blog__header-link"
+                                                                           href="https://www.ibm.com/blogs/psirt/security-bulletin-multiple-java-vulnerabilities-impact-ibm-control-center/"><span
+                                class="ibm-textcolor-default">Security Bulletin: Multiple Java Vulnerabilities Impact IBM Control Center</span></a>
+                        </h4>\n <h4 class="ibm-medium">\n Sep 25, 2020 8:00 pm EDT &#124; <a
+                                href="https://www.ibm.com/blogs/psirt/category/severity-low/">Low Severity</a></h4>\n\n
+                        <p class="ibm-medium ibm-padding-bottom-1">There are multiple vulnerabilities in IBM® Runtime
+                            Environment Java&#x2122; Technology Edition, Version 7 and 8 that is used by IBM Control
+                            Center. These issues were disclosed as part of the IBM Java SDK updates in July 2020<a
+                                    href=\'https://www.ibm.com/blogs/psirt/security-bulletin-multiple-java-vulnerabilities-impact-ibm-control-center/\'
+                                    target=\'_self\'> ...read more</a></p>\n
+                    </div>
+                    \n
+                </div>
+                \n
+                <div class="ibm-rule">
+                    <hr>
+                </div>
+                \n\n\n
+                <div class="ibm-columns">\n
+                    <div class="ibm-col-1-6 post post" data-post-id-
+                    "82671">\n <h4 class="ibm-h3 ibm-padding-top-1"><a class="ibm-blog__header-link"
+                                                                       href="https://www.ibm.com/blogs/psirt/security-bulletin-ibm-infosphere-information-server-is-vulnerable-to-cross-frame-scripting/"><span
+                            class="ibm-textcolor-default">Security Bulletin: IBM InfoSphere Information Server is vulnerable to Cross-frame scripting</span></a>
+                    </h4>\n <h4 class="ibm-medium">\n Sep 24, 2020 8:00 pm EDT &#124; <a
+                            href="https://www.ibm.com/blogs/psirt/category/severity-med/">Medium Severity</a></h4>\n\n
+                    <p class="ibm-medium ibm-padding-bottom-1">A Cross-frame scripting vulnerability was addressed by
+                        IBM InfoSphere Information Server.<a
+                                href=\'https://www.ibm.com/blogs/psirt/security-bulletin-ibm-infosphere-information-server-is-vulnerable-to-cross-frame-scripting/\'
+                                target=\'_self\'> ...read more</a></p>\n
+                </div>
+                \n
+            </div>
+            \n
+            <div class="ibm-rule">
+                <hr>
+            </div>
+            \n\n\n
+            <div class="ibm-columns">\n
+                <div class="ibm-col-1-6 post post" data-post-id-
+                "82668">\n <h4 class="ibm-h3 ibm-padding-top-1"><a class="ibm-blog__header-link"
+                                                                   href="https://www.ibm.com/blogs/psirt/security-bulletin-security-vulnerabilities-in-ibm-java-sdk-july-2020-cpu-plus-cve-2020-2590-and-cve-2020-2601-affect-multiple-ibm-continuous-engineering-products-based-on-ibm-jazz-technology/"><span
+                        class="ibm-textcolor-default">Security Bulletin: Security Vulnerabilities in IBM&#174; Java SDK July 2020 CPU plus CVE-2020-2590 and CVE-2020-2601 affect multiple IBM Continuous Engineering products based on IBM Jazz Technology</span></a>
+                </h4>\n <h4 class="ibm-medium">\n Sep 24, 2020 8:00 pm EDT &#124; <a
+                        href="https://www.ibm.com/blogs/psirt/category/severity-low/">Low Severity</a></h4>\n\n <p
+                        class="ibm-medium ibm-padding-bottom-1">There are multiple vulnerabilities in IBM® SDK Java
+                    Technology Edition from July 2020 CPU, the CVE-2020-2590 (deferred from Oracle Jan 2020 CPU) and
+                    CVE-2020-2601 (deferred from Oracle Jan 2020 CPU) that are used by IBM Jazz Team Server affecting
+                    the following IBM Jazz Team Server based Applications: Engineering Lifecycle Management (ELM), IBM
+                    Engineering Requirements Management DOORS Next (DOORS Next), IBM Engineering Lifecycle Optimization
+                    - Engineering Insights (ENI), IBM Engineering Workflow Management (EWM), IBM Engineering Systems
+                    Design Rhapsody - Design Manager (RDM), IBM Engineering Systems Design Rhapsody - Model Manager
+                    (RMM). These issues were disclosed as part of the IBM Java SDK updates in July 2020.<a
+                            href=\'https://www.ibm.com/blogs/psirt/security-bulletin-security-vulnerabilities-in-ibm-java-sdk-july-2020-cpu-plus-cve-2020-2590-and-cve-2020-2601-affect-multiple-ibm-continuous-engineering-products-based-on-ibm-jazz-technology/\'
+                            target=\'_self\'> ...read more</a></p>\n
+            </div>
+            \n
+        </div>
+        \n
+        <div class="ibm-rule">
+            <hr>
+        </div>
+        \n\n\n
+        <div class="ibm-columns">\n
+            <div class="ibm-col-1-6 post post" data-post-id-
+            "82665">\n <h4 class="ibm-h3 ibm-padding-top-1"><a class="ibm-blog__header-link"
+                                                               href="https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-in-ibm-java-runtime-affect-ibm-spectrum-conductor-and-ibm-spectrum-conductor-with-spark-2/"><span
+                    class="ibm-textcolor-default">Security Bulletin: A vulnerability in IBM Java Runtime affect IBM Spectrum Conductor and IBM Spectrum Conductor with Spark</span></a>
+            </h4>\n <h4 class="ibm-medium">\n Sep 24, 2020 8:00 pm EDT &#124; <a
+                    href="https://www.ibm.com/blogs/psirt/category/severity-med/">Medium Severity</a></h4>\n\n <p
+                    class="ibm-medium ibm-padding-bottom-1">There is a vulnerability in IBM® Runtime Environment Java&#x2122;
+                Version 8 used by IBM Spectrum Conductor 2.4.1, IBM Spectrum Conductor 2.4.0, IBM Spectrum Conductor
+                2.3.0, and IBM Spectrum Conductor with Spark 2.2.1. IBM Spectrum Conductor 2.4.1, IBM Spectrum Conductor
+                2.4.0, IBM Spectrum Conductor 2.3, and IBM Spectrum Conductor with Spark 2.2.1 have addressed the
+                applicable CVE.<a
+                        href=\'https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-in-ibm-java-runtime-affect-ibm-spectrum-conductor-and-ibm-spectrum-conductor-with-spark-2/\'
+                        target=\'_self\'> ...read more</a></p>\n
+        </div>
+        \n
+</div>
+\n
+<div class="ibm-rule">
+    <hr>
+</div>
+\n\n\n
+<div class="ibm-columns">\n
+    <div class="ibm-col-1-6 post post" data-post-id-
+    "82662">\n <h4 class="ibm-h3 ibm-padding-top-1"><a class="ibm-blog__header-link"
+                                                       href="https://www.ibm.com/blogs/psirt/security-bulletin-websphere-application-server-is-vulnerable-to-an-information-exposure-vulnerability-cve-2020-4643-2/"><span
+            class="ibm-textcolor-default">Security Bulletin: WebSphere Application Server is vulnerable to an information exposure vulnerability (CVE-2020-4643)</span></a>
+    </h4>\n <h4 class="ibm-medium">\n Sep 24, 2020 8:00 pm EDT &#124; <a
+            href="https://www.ibm.com/blogs/psirt/category/severity-high/">High Severity</a></h4>\n\n <p
+            class="ibm-medium ibm-padding-bottom-1">WebSphere Application Server is vulnerable to an information
+        exposure vulnerability. This has been addressed.<a
+                href=\'https://www.ibm.com/blogs/psirt/security-bulletin-websphere-application-server-is-vulnerable-to-an-information-exposure-vulnerability-cve-2020-4643-2/\'
+                target=\'_self\'> ...read more</a></p>\n
+</div>
+\n</div>\n
+<div class="ibm-rule">
+    <hr>
+</div>
+\n\n\n
+<div class="ibm-columns">\n
+    <div class="ibm-col-1-6 post post" data-post-id-
+    "82659">\n <h4 class="ibm-h3 ibm-padding-top-1"><a class="ibm-blog__header-link"
+                                                       href="https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-in-ibm-java-runtime-affect-ibm-spectrum-conductor-and-ibm-spectrum-conductor-with-spark/"><span
+            class="ibm-textcolor-default">Security Bulletin: A vulnerability in IBM Java Runtime affect IBM Spectrum Conductor and IBM Spectrum Conductor with Spark</span></a>
+    </h4>\n <h4 class="ibm-medium">\n Sep 24, 2020 8:00 pm EDT &#124; <a
+            href="https://www.ibm.com/blogs/psirt/category/severity-low/">Low Severity</a></h4>\n\n <p
+            class="ibm-medium ibm-padding-bottom-1">There is a vulnerability in IBM® Runtime Environment Java&#x2122;
+        Version 8 used by IBM Spectrum Conductor 2.4.1, IBM Spectrum Conductor 2.4.0, IBM Spectrum Conductor 2.3.0, and
+        IBM Spectrum Conductor with Spark 2.2.1. IBM Spectrum Conductor 2.4.1, IBM Spectrum Conductor 2.4.0, IBM
+        Spectrum Conductor 2.3, and IBM Spectrum Conductor with Spark 2.2.1 have addressed the applicable CVE.<a
+                href=\'https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-in-ibm-java-runtime-affect-ibm-spectrum-conductor-and-ibm-spectrum-conductor-with-spark/\'
+                target=\'_self\'> ...read more</a></p>\n
+</div>
+\n</div>\n
+<div class="ibm-rule">
+    <hr>
+</div>
+\n\n</div>\r\n
+<div class="ibm-col-6-2 ibm-blog__article-side ibm-padding-top-2">\r\n
+    <div class="ibm-blog__share">\r\n
+        <div class=\'ibm-widgets ibm-padding-top-0 ibm-padding-bottom-1\
+        '><h4 class="ibm-h3">Search Posts</h4>
+        <form role="search" method="get" id="searchform" class="searchform" action="https://www.ibm.com/blogs/psirt/">\n
+            <div>\n <input type="text" value="" name="s" id="s" class="ibm-styled-input"/>\n <input type="submit"
+                                                                                                    id="searchsubmit"
+                                                                                                    class="ibm-btn-pri ibm-btn-small"
+                                                                                                    value="Search"/>\n
+            </div>
+            \n
+        </form>
+        <div class="ibm-rule ibm-alternate ibm-padding-bottom-0 ibm-gray-30">
+            <hr>
+        </div>
+    </div>
+    <div class=\'ibm-widgets ibm-padding-top-0 ibm-padding-bottom-1\
+    '><h4 class="ibm-h3">Archives</h4>\t\t<label class="screen-reader-text" for="archives-dropdown-2">Archives</label>\n\t\t<select
+            id="archives-dropdown-2" name="archive-dropdown"
+            onchange=\'document.location.href=this.options[this.selectedIndex].value;\'>\n\t\t\t\n\t\t\t
+        <option value="">Select Month</option>
+        \n\t\t\t\t
+        <option value=\'https://www.ibm.com/blogs/psirt/2020/09/\'> September 2020 &nbsp;(153)</option>
+        \n\t
+        <option value=\'https://www.ibm.com/blogs/psirt/2020/08/\'> August 2020 &nbsp;(297)</option>
+        \n\t
+        <option value=\'https://www.ibm.com/blogs/psirt/2020/07/\'> July 2020 &nbsp;(235)</option>
+        \n\t
+        <option value=\'https://www.ibm.com/blogs/psirt/2020/06/\'> June 2020 &nbsp;(247)</option>
+        \n\t
+        <option value=\'https://www.ibm.com/blogs/psirt/2020/05/\'> May 2020 &nbsp;(203)</option>
+        \n\t
+        <option value=\'https://www.ibm.com/blogs/psirt/2020/04/\'> April 2020 &nbsp;(182)</option>
+        \n\t
+        <option value=\'https://www.ibm.com/blogs/psirt/2020/03/\'> March 2020 &nbsp;(187)</option>
+        \n\t
+        <option value=\'https://www.ibm.com/blogs/psirt/2020/02/\'> February 2020 &nbsp;(176)</option>
+        \n\t
+        <option value=\'https://www.ibm.com/blogs/psirt/2020/01/\'> January 2020 &nbsp;(148)</option>
+        \n\t
+        <option value=\'https://www.ibm.com/blogs/psirt/2019/12/\'> December 2019 &nbsp;(149)</option>
+        \n\t
+        <option value=\'https://www.ibm.com/blogs/psirt/2019/11/\'> November 2019 &nbsp;(80)</option>
+        \n\t
+        <option value=\'https://www.ibm.com/blogs/psirt/2019/10/\'> October 2019 &nbsp;(87)</option>
+        \n\n\t\t</select>\n\t\t
+    <div class="ibm-rule ibm-alternate ibm-padding-bottom-0 ibm-gray-30">
+        <hr>
+    </div>
+</div>
+<div class=\'ibm-widgets ibm-padding-top-0 ibm-padding-bottom-1\
+'><h3 class="ibm-h3">Resources</h3>
+<ul class="ibm-link-list">
+    <li><a target="_blank" class="ibm-rss-link" href="https://www.ibm.com/blogs/psirt/?feed=atom">Feed for PSIRT Blog
+        Posts</a></li>
+</ul>
+<div class="ibm-rule ibm-alternate ibm-padding-bottom-0 ibm-gray-30">
+    <hr>
+</div>
+</div>
+<div class=\'ibm-widgets ibm-padding-top-0 ibm-padding-bottom-1\
+'><h4 class="ibm-h3">IBM Product Security Vulnerabilities</h4>
+<p class="">See information about: IBM Security Bulletins, IBM Security Vulnerability Management (PSIRT), Reporting a
+    Security Issue, IBM Secure Engineering</p>
+<div class="ibm-alternate-background ibm-padding-top-1 ibm-padding-bottom-0">\n <p
+        class="ibm-button-link ibm-padding-bottom-0">\n <a class="ibm-btn-pri ibm-btn-blue-50 ibm-resize"
+                                                           href="https://www.ibm.com/security/secure-engineering/bulletins.html"
+                                                           target="_blank">\n <span
+        class="ibm-textcolor-white-core ibm-bold">Learn More</span>\n </a>\n </p>\n
+</div>
+\n
+<div class="ibm-rule ibm-alternate ibm-padding-bottom-0 ibm-gray-30">
+    <hr>
+</div>
+</div>
+<div class=\'ibm-widgets ibm-padding-top-0 ibm-padding-bottom-1\
+'><h4 class="ibm-h3">IBM Product Support Portal</h4>
+<p class="">Access IBM Product Support to: Subscribe to Notifications, Download Fixes & PTFs (Fix Central), Access the
+    Directory of IBM Worldwide Contacts</p>
+<div class="ibm-alternate-background ibm-padding-top-1 ibm-padding-bottom-0">\n <p
+        class="ibm-button-link ibm-padding-bottom-0">\n <a class="ibm-btn-pri ibm-btn-blue-50 ibm-resize"
+                                                           href="https://www.ibm.com/support" target="_blank">\n <span
+        class="ibm-textcolor-white-core ibm-bold">See What\'s New</span>\n </a>\n </p>\n
+</div>
+\n
+<div class="ibm-rule ibm-alternate ibm-padding-bottom-0 ibm-gray-30">
+    <hr>
+</div>
+</div>
+<div class=\'ibm-widgets ibm-padding-top-0 ibm-padding-bottom-1\
+'><h4 class="ibm-h3">Helpful Information</h4>\t\t\t
+<div class="textwidget">
+    <ul>
+        <li><a href="https://www.ibm.com/support/mynotifications/" target="_blank">Subscribe to Security Bulletins</a>
+        </li>
+        <li><a href="https://www.ibm.com/security/secure-engineering/bulletins.html" target="_blank">IBM Security
+            Bulletins</a></li>
+        <li><a href="https://www.ibm.com/security/secure-engineering/process.html" target="_blank">IBM Security
+            Vulnerability Management (PSIRT)</a></li>
+        <li><a href="https://www.ibm.com/support" target="_blank">IBM Product Support Portal</a></li>
+        <li><a href="https://www.ibm.com/systems/z/solutions/security_subintegrity.html" target="_blank">IBM System z
+            Security Portal</a></li>
+        <li><a href="https://www.ibm.com/security/secure-engineering/" target="_blank">IBM Secure Engineering
+            Practices</a></li>
+        <li><a href="https://www.ibm.com/security/secure-engineering/report.html" target="_blank">Report Security
+            Issue</a></li>
+    </ul>
+</div>
+\n\t\t
+<div class="ibm-rule ibm-alternate ibm-padding-bottom-0 ibm-gray-30">
+    <hr>
+</div>
+</div>                        </div>\r\n                    </div>\r\n        </div> <!-- .ibm-columns -->
+\r\n\r\n\r\n</div> <!-- #content -->\r\n\r\n<!-- pagination here --> \r\n
+<ul role="navigation" aria-label="Pagination" class="ibm-pagination ibm-pagination--centered">
+    <li class="ibm-pagination__page"><span aria-current="page" class="page-numbers current">1</span>
+    <li class="ibm-pagination__page"><a class="page-numbers" href="https://www.ibm.com/blogs/psirt/page/2/">2</a></li>
+    <li class="ibm-pagination__page"><a class="page-numbers" href="https://www.ibm.com/blogs/psirt/page/3/">3</a></li>
+    <li class="ibm-pagination__page"><span class="page-numbers dots">&hellip;</span>
+    <li class="ibm-pagination__page"><a class="page-numbers" href="https://www.ibm.com/blogs/psirt/page/1566/">1,566</a>
+    </li>
+    <li><a class="next page-numbers ibm-next-link ibm-inlinelink ibm-icon-after"
+           href="https://www.ibm.com/blogs/psirt/page/2/">Next</a>
+</ul>
+\r\n\r\n                            </div>\r\n                    </div>\r\n              </div>\r\n            </div>
+\r\n        </main>\r\n\r\n \r\n \r\n                                        </div>\r\n\r\n
+<!-- IBM: FOOTER_BEGIN -->\r\n
+<div id="ibm-footer-module"></div>
+\r\n
+<footer role="contentinfo" aria-label="IBM">\r\n
+    <div id="ibm-footer">\r\n
+        <ul>\r\n
+            <li><a href="//www.ibm.com/contact/us/en/">Contact</a></li>
+            \r\n
+            <li><a href="//www.ibm.com/privacy/us/en/">Privacy</a></li>
+            \r\n
+            <li><a href="//www.ibm.com/legal/us/en/">Terms of use</a></li>
+            \r\n
+            <li><a href="//www.ibm.com/accessibility/us/en/">Accessibility</a></li>
+            \r\n
+        </ul>
+        \r\n
+    </div>
+    \r\n
+</footer>
+\r\n\r\n            <!-- IBM: METRICS -->\r\n
+<script type="text/javascript" src="//www.ibm.com/software/info/js/tactic.js"></script>
+\r\n
+<script type="text/javascript" src="//www.ibm.com/software/info/js/tacticbindlinks.js"></script>
+\r\n \r\n
+<script type="text/javascript">\r\n\tjQuery(document).ready(function () {\r\n\t\r\n\t\tjQuery(\'.ibm-blog__article-main > h1\').addClass("ibm-h1");\r\n\t\tjQuery(\'.ibm-blog__article-main > h3\').addClass("ibm-h3");\r\n\t\tjQuery(\'.ibm-blog__article-main h2\').each(function(i){\r\n\r\n\t\t\tif(jQuery(this).closest(\'.ibm-show-hide\').length == 0)\r\n\t\t\t{\r\n\t\t\t\tjQuery(this).addClass("ibm-h2");\r\n\t\t\t}\r\n\t\t});\r\n\t\t\r\n\t\t\r\n\r\n\r\n\t\tjQuery(\'#ibm-content-main\').find(\'h1\').addClass("ibm-h1");\r\n\t\tjQuery(\'#ibm-content-main\').find(\'h3\').addClass("ibm-h3");\r\n\r\n\t\tjQuery(\'#ibm-content-main h2\').each(function(i){\r\n\r\n\t\t\tif(jQuery(this).closest(\'.ibm-show-hide\').length == 0)\r\n\t\t\t{\r\n\t\t\t\tjQuery(this).addClass("ibm-h2");\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t/* JQUERY TO REMOVE FIRST WIDGETS TOP LINE */\r\n\t   if(jQuery(\'.ibm-blog__share\').children().first().hasClass(\'ibm-widgets\'))\r\n\t   {\r\n\t   \t//jQuery(\'.ibm-widgets\').eq(0).find(\'.ibm-rule\').remove();\r\n\t   }\r\n\t\t\r\n\t\t//\r\n\t});\r\n</script>
+\r\n
+<script type=\'text/javascript\'
+        src=\'https://www.ibm.com/blogs/psirt/wp-content/themes/ibmNorthstarDev/assets/js/site.js\'
+        id=\'site_js-js\'></script>
+\n
+<script type=\'text/javascript\'
+        src=\'https://www.ibm.com/blogs/psirt/wp-content/themes/ibmNorthstarDev/assets/js/v18_rev.js\'
+        id=\'v18_rev-js\'></script>
+\n
+<script type=\'text/javascript\' src=\'https://www.ibm.com/blogs/psirt/wp-includes/js/wp-embed.min.js\'
+        id=\'wp-embed-js\'></script>
+\n\t
+<script type="text/javascript">var _cf = _cf || [];
+_cf.push([\'_setFsp\', true]);  _cf.push([\'_setBm\', true]);  _cf.push([\'_setAu\', \'/assets/b9454bb1ui227a894d7ede77cbe113\']); </script>
+<script type="text/javascript" src="/assets/b9454bb1ui227a894d7ede77cbe113"></script>
+</body>
+\r\n\r\n
+</html>

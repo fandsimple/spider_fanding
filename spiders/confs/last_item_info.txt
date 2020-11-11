@@ -1,0 +1,1 @@
+{"packetstormsecurity":{"date":"Sep 23, 2020","url":"https://packetstormsecurity.com/files/159273/Red-Hat-Security-Advisory-2020-3809-01.html"}}

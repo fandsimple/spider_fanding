@@ -1,0 +1,166 @@
+2020-09-11 11:39:03 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: spiders)
+2020-09-11 11:39:03 [scrapy.utils.log] INFO: Versions: lxml 4.3.4.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.6.7 (default, Jun 29 2019, 14:29:19) - [GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-18.7.0-x86_64-i386-64bit
+2020-09-11 11:39:03 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'spiders', 'CONCURRENT_REQUESTS': 4, 'DOWNLOAD_DELAY': 2, 'FEED_FORMAT': 'csv', 'FEED_URI': 'data.csv', 'LOG_FILE': '/Users/fanding/gitProjects/spiders_qiming/logs/2020-09-11-11-scrapy.log', 'NEWSPIDER_MODULE': 'spiders.spiders', 'SPIDER_MODULES': ['spiders.spiders']}
+2020-09-11 11:39:03 [scrapy.extensions.telnet] INFO: Telnet Password: 5b4c9eff5f8f5535
+2020-09-11 11:39:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2020-09-11 11:39:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'spiders.downloaderMiddlewares.userAgentMiddleware.randomUserAgentDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-09-11 11:39:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-09-11 11:39:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-09-11 11:39:03 [scrapy.core.engine] INFO: Spider opened
+2020-09-11 11:39:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-09-11 11:39:03 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-09-11 11:39:04 [root] INFO: start start_requests
+2020-09-11 11:39:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/blogs/psirt/> (referer: None)
+2020-09-11 11:39:05 [root] INFO: start call_url
+2020-09-11 11:39:05 [root] INFO: start getList
+2020-09-11 11:39:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/blogs/psirt/security-bulletin-vulnerability-in-ibm-java-runtime-affects-host-on-demand-2/> (referer: https://www.ibm.com/blogs/psirt/)
+2020-09-11 11:39:07 [root] INFO: start call_url
+2020-09-11 11:39:07 [root] INFO: start parseDetailInfo
+2020-09-11 11:39:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/blogs/psirt/security-bulletin-vulnerability-in-jackson-databind-shipped-with-ibm-cloud-pak-system/> (referer: https://www.ibm.com/blogs/psirt/)
+2020-09-11 11:39:09 [root] INFO: start call_url
+2020-09-11 11:39:09 [root] INFO: start parseDetailInfo
+2020-09-11 11:39:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/blogs/psirt/security-bulletin-multiple-vulnerabilities-in-ibm-java-sdk-affect-ibm-cloud-orchestrator-and-ibm-cloud-orchestrator-enterprise/> (referer: https://www.ibm.com/blogs/psirt/)
+2020-09-11 11:39:11 [root] INFO: start call_url
+2020-09-11 11:39:11 [root] INFO: start parseDetailInfo
+2020-09-11 11:39:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-may-affect-ibm-sdk-java-technology-edition-used-in-liberty-for-java-for-ibm-cloud-cve-2020-2601/> (referer: https://www.ibm.com/blogs/psirt/)
+2020-09-11 11:39:14 [root] INFO: start call_url
+2020-09-11 11:39:14 [root] INFO: start parseDetailInfo
+2020-09-11 11:39:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/support/pages/node/6330949> (referer: https://www.ibm.com/blogs/psirt/security-bulletin-vulnerability-in-ibm-java-runtime-affects-host-on-demand-2/)
+2020-09-11 11:39:18 [root] INFO: start call_url
+2020-09-11 11:39:18 [root] INFO: start parseCveExtInfo
+2020-09-11 11:39:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6330949>
+{'description': 'There is a vulnerability in IBM® Runtime Environment Java™ Version 8 used by Host On-Demand. Host On-Demand has addressed the applicable CVE. The issue was disclosed as part of the IBM Java SDK and Runtime Environment updates in Oracle April 2020 Critical Patch Update.', 'cveCode': 'CVE-2020-2781', 'score': '5.3', 'title': 'Vulnerability in IBM Java Runtime affects Host On-Demand', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-vulnerability-in-ibm-java-runtime-affects-host-on-demand-2/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6330949'}
+2020-09-11 11:39:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-in-ibm-java-sdk-and-ibm-java-runtime-related-to-the-kerberos-component-affect-ibm-db2-cve-2019-2949/> (referer: https://www.ibm.com/blogs/psirt/)
+2020-09-11 11:39:20 [root] INFO: start call_url
+2020-09-11 11:39:20 [root] INFO: start parseDetailInfo
+2020-09-11 11:39:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/support/pages/node/6328195> (referer: https://www.ibm.com/blogs/psirt/security-bulletin-vulnerability-in-jackson-databind-shipped-with-ibm-cloud-pak-system/)
+2020-09-11 11:39:21 [root] INFO: start call_url
+2020-09-11 11:39:21 [root] INFO: start parseCveExtInfo
+2020-09-11 11:39:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6328195>
+{'description': 'Vulnerabilitiy identified in jackson-databind shipped with IBM Cloud Pak System. IBM Clous Pak System addresssed vulnerabilities.', 'cveCode': 'CVE-2020-24616', 'score': '9.8', 'title': 'Vulnerability in jackson-databind shipped with IBM Cloud Pak System', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-vulnerability-in-jackson-databind-shipped-with-ibm-cloud-pak-system/', 'releaseTime': 'Sep 9, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6328195'}
+2020-09-11 11:39:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/support/pages/node/6327981> (referer: https://www.ibm.com/blogs/psirt/security-bulletin-multiple-vulnerabilities-in-ibm-java-sdk-affect-ibm-cloud-orchestrator-and-ibm-cloud-orchestrator-enterprise/)
+2020-09-11 11:39:24 [root] INFO: start call_url
+2020-09-11 11:39:24 [root] INFO: start parseCveExtInfo
+2020-09-11 11:39:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6327981>
+{'description': 'There are multiple vulnerabilities in IBM® SDK Java™ Technology Edition that is used by IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise. These issues were disclosed as part of the IBM SDK, Java Technology Edition Quarterly CPU - Jan 2020 - Includes Oracle Jan 2020 CPU minus CVE-2020-2585, CVE-2020-2654, and CVE-2020-2590.', 'cveCode': 'CVE-2020-2805', 'score': '8.3', 'title': 'Multiple vulnerabilities in IBM Java SDK affect IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-multiple-vulnerabilities-in-ibm-java-sdk-affect-ibm-cloud-orchestrator-and-ibm-cloud-orchestrator-enterprise/', 'releaseTime': 'Sep 9, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6327981'}
+2020-09-11 11:39:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6327981>
+{'description': 'There are multiple vulnerabilities in IBM® SDK Java™ Technology Edition that is used by IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise. These issues were disclosed as part of the IBM SDK, Java Technology Edition Quarterly CPU - Jan 2020 - Includes Oracle Jan 2020 CPU minus CVE-2020-2585, CVE-2020-2654, and CVE-2020-2590.', 'cveCode': 'CVE-2020-2803', 'score': '8.3', 'title': 'Multiple vulnerabilities in IBM Java SDK affect IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-multiple-vulnerabilities-in-ibm-java-sdk-affect-ibm-cloud-orchestrator-and-ibm-cloud-orchestrator-enterprise/', 'releaseTime': 'Sep 9, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6327981'}
+2020-09-11 11:39:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6327981>
+{'description': 'There are multiple vulnerabilities in IBM® SDK Java™ Technology Edition that is used by IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise. These issues were disclosed as part of the IBM SDK, Java Technology Edition Quarterly CPU - Jan 2020 - Includes Oracle Jan 2020 CPU minus CVE-2020-2585, CVE-2020-2654, and CVE-2020-2590.', 'cveCode': 'CVE-2020-2830', 'score': '5.3', 'title': 'Multiple vulnerabilities in IBM Java SDK affect IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-multiple-vulnerabilities-in-ibm-java-sdk-affect-ibm-cloud-orchestrator-and-ibm-cloud-orchestrator-enterprise/', 'releaseTime': 'Sep 9, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6327981'}
+2020-09-11 11:39:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6327981>
+{'description': 'There are multiple vulnerabilities in IBM® SDK Java™ Technology Edition that is used by IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise. These issues were disclosed as part of the IBM SDK, Java Technology Edition Quarterly CPU - Jan 2020 - Includes Oracle Jan 2020 CPU minus CVE-2020-2585, CVE-2020-2654, and CVE-2020-2590.', 'cveCode': 'CVE-2020-2781', 'score': '5.3', 'title': 'Multiple vulnerabilities in IBM Java SDK affect IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-multiple-vulnerabilities-in-ibm-java-sdk-affect-ibm-cloud-orchestrator-and-ibm-cloud-orchestrator-enterprise/', 'releaseTime': 'Sep 9, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6327981'}
+2020-09-11 11:39:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6327981>
+{'description': 'There are multiple vulnerabilities in IBM® SDK Java™ Technology Edition that is used by IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise. These issues were disclosed as part of the IBM SDK, Java Technology Edition Quarterly CPU - Jan 2020 - Includes Oracle Jan 2020 CPU minus CVE-2020-2585, CVE-2020-2654, and CVE-2020-2590.', 'cveCode': 'CVE-2020-2800', 'score': '4.8', 'title': 'Multiple vulnerabilities in IBM Java SDK affect IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-multiple-vulnerabilities-in-ibm-java-sdk-affect-ibm-cloud-orchestrator-and-ibm-cloud-orchestrator-enterprise/', 'releaseTime': 'Sep 9, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6327981'}
+2020-09-11 11:39:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6327981>
+{'description': 'There are multiple vulnerabilities in IBM® SDK Java™ Technology Edition that is used by IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise. These issues were disclosed as part of the IBM SDK, Java Technology Edition Quarterly CPU - Jan 2020 - Includes Oracle Jan 2020 CPU minus CVE-2020-2585, CVE-2020-2654, and CVE-2020-2590.', 'cveCode': 'CVE-2020-2757', 'score': '3.7', 'title': 'Multiple vulnerabilities in IBM Java SDK affect IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-multiple-vulnerabilities-in-ibm-java-sdk-affect-ibm-cloud-orchestrator-and-ibm-cloud-orchestrator-enterprise/', 'releaseTime': 'Sep 9, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6327981'}
+2020-09-11 11:39:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6327981>
+{'description': 'There are multiple vulnerabilities in IBM® SDK Java™ Technology Edition that is used by IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise. These issues were disclosed as part of the IBM SDK, Java Technology Edition Quarterly CPU - Jan 2020 - Includes Oracle Jan 2020 CPU minus CVE-2020-2585, CVE-2020-2654, and CVE-2020-2590.', 'cveCode': 'CVE-2020-2756', 'score': '3.7', 'title': 'Multiple vulnerabilities in IBM Java SDK affect IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-multiple-vulnerabilities-in-ibm-java-sdk-affect-ibm-cloud-orchestrator-and-ibm-cloud-orchestrator-enterprise/', 'releaseTime': 'Sep 9, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6327981'}
+2020-09-11 11:39:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6327981>
+{'description': 'There are multiple vulnerabilities in IBM® SDK Java™ Technology Edition that is used by IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise. These issues were disclosed as part of the IBM SDK, Java Technology Edition Quarterly CPU - Jan 2020 - Includes Oracle Jan 2020 CPU minus CVE-2020-2585, CVE-2020-2654, and CVE-2020-2590.', 'cveCode': 'CVE-2020-2755', 'score': '3.7', 'title': 'Multiple vulnerabilities in IBM Java SDK affect IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-multiple-vulnerabilities-in-ibm-java-sdk-affect-ibm-cloud-orchestrator-and-ibm-cloud-orchestrator-enterprise/', 'releaseTime': 'Sep 9, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6327981'}
+2020-09-11 11:39:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6327981>
+{'description': 'There are multiple vulnerabilities in IBM® SDK Java™ Technology Edition that is used by IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise. These issues were disclosed as part of the IBM SDK, Java Technology Edition Quarterly CPU - Jan 2020 - Includes Oracle Jan 2020 CPU minus CVE-2020-2585, CVE-2020-2654, and CVE-2020-2590.', 'cveCode': 'CVE-2020-2754', 'score': '3.7', 'title': 'Multiple vulnerabilities in IBM Java SDK affect IBM Cloud Orchestrator and IBM Cloud Orchestrator Enterprise', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-multiple-vulnerabilities-in-ibm-java-sdk-affect-ibm-cloud-orchestrator-and-ibm-cloud-orchestrator-enterprise/', 'releaseTime': 'Sep 9, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6327981'}
+2020-09-11 11:39:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/support/pages/node/6331793> (referer: https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-may-affect-ibm-sdk-java-technology-edition-used-in-liberty-for-java-for-ibm-cloud-cve-2020-2601/)
+2020-09-11 11:39:26 [root] INFO: start call_url
+2020-09-11 11:39:26 [root] INFO: start parseCveExtInfo
+2020-09-11 11:39:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6331793>
+{'description': 'CVE-2020-2601 was disclosed in the Oracle January 2020 Critical Patch Update.', 'cveCode': 'CVE-2020-2601', 'score': '6.8', 'title': 'A vulnerability may affect IBM® SDK, Java™ Technology Edition used in Liberty for Java for IBM Cloud (CVE-2020-2601)', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-may-affect-ibm-sdk-java-technology-edition-used-in-liberty-for-java-for-ibm-cloud-cve-2020-2601/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6331793'}
+2020-09-11 11:39:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/blogs/psirt/security-bulletin-ibm-db2-on-aix-and-linux-affected-by-a-vulnerability-in-ibm-spectrum-scale-cve-2020-4412/> (referer: https://www.ibm.com/blogs/psirt/)
+2020-09-11 11:39:29 [root] INFO: start call_url
+2020-09-11 11:39:29 [root] INFO: start parseDetailInfo
+2020-09-11 11:39:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/support/pages/node/6330711> (referer: https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-in-ibm-java-sdk-and-ibm-java-runtime-related-to-the-kerberos-component-affect-ibm-db2-cve-2019-2949/)
+2020-09-11 11:39:32 [root] INFO: start call_url
+2020-09-11 11:39:32 [root] INFO: start parseCveExtInfo
+2020-09-11 11:39:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6330711>
+{'description': 'In some versions of IBM Java SDK a vulnerability related to the Kerberos component could allow an unauthenticated attacker to obtain sensitive information resulting in a high confidentiality impact using unknown attack vectors.', 'cveCode': 'CVE-2019-2949', 'score': '6.8', 'title': 'A vulnerability in IBM Java SDK and IBM Java Runtime related to the Kerberos component affect IBM® Db2®. (CVE-2019-2949)', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-in-ibm-java-sdk-and-ibm-java-runtime-related-to-the-kerberos-component-affect-ibm-db2-cve-2019-2949/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6330711'}
+2020-09-11 11:39:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/blogs/psirt/security-bulletin-ibm-sdk-java-technology-edition-quarterly-cpu-jul-2020-includes-oracle-jul-2020-cpu-plus-one-additional-vulnerability-affects-liberty-for-java-for-ibm-cloud/> (referer: https://www.ibm.com/blogs/psirt/)
+2020-09-11 11:39:34 [root] INFO: start call_url
+2020-09-11 11:39:34 [root] INFO: start parseDetailInfo
+2020-09-11 11:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/blogs/psirt/security-bulletin-ibm-db2-on-aix-and-linux-affected-by-a-vulnerability-in-ibm-spectrum-scale-cve-2020-4411/> (referer: https://www.ibm.com/blogs/psirt/)
+2020-09-11 11:39:37 [root] INFO: start call_url
+2020-09-11 11:39:37 [root] INFO: start parseDetailInfo
+2020-09-11 11:39:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-may-affect-ibm-sdk-java-technology-edition-used-in-liberty-for-java-for-ibm-cloud-cve-2020-2590/> (referer: https://www.ibm.com/blogs/psirt/)
+2020-09-11 11:39:39 [root] INFO: start call_url
+2020-09-11 11:39:39 [root] INFO: start parseDetailInfo
+2020-09-11 11:39:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/support/pages/node/6330587> (referer: https://www.ibm.com/blogs/psirt/security-bulletin-ibm-db2-on-aix-and-linux-affected-by-a-vulnerability-in-ibm-spectrum-scale-cve-2020-4412/)
+2020-09-11 11:39:42 [root] INFO: start call_url
+2020-09-11 11:39:42 [root] INFO: start parseCveExtInfo
+2020-09-11 11:39:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6330587>
+{'description': 'The Spectrum Scale 4.2.0.0 through 4.2.3.21 and 5.0.0.0 through 5.0.4.3 file system component is affected by a denial of service security vulnerability. An attacker can force the Spectrum Scale mmfsd/mmsdrserv daemons to unexpectedly exit, impacting the functionality of the Spectrum Scale cluster and the availability of file systems managed by Spectrum Scale.   IBM Spectrum Scale is previously known as General Parallel File System (GPFS).', 'cveCode': 'CVE-2020-4412', 'score': '5.3', 'title': 'IBM® Db2® on AIX and Linux Affected by a Vulnerability in IBM® Spectrum Scale (CVE-2020-4412)', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-ibm-db2-on-aix-and-linux-affected-by-a-vulnerability-in-ibm-spectrum-scale-cve-2020-4412/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6330587'}
+2020-09-11 11:39:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/support/pages/node/6331801> (referer: https://www.ibm.com/blogs/psirt/security-bulletin-ibm-sdk-java-technology-edition-quarterly-cpu-jul-2020-includes-oracle-jul-2020-cpu-plus-one-additional-vulnerability-affects-liberty-for-java-for-ibm-cloud/)
+2020-09-11 11:39:45 [root] INFO: start call_url
+2020-09-11 11:39:45 [root] INFO: start parseCveExtInfo
+2020-09-11 11:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6331801>
+{'description': 'Multiple Vulnerabilities in IBM® SDK, Java™ Technology Edition affect Liberty for Java July 2020 CPU.', 'cveCode': 'CVE-2020-14583', 'score': '8.3', 'title': 'IBM® SDK, Java™ Technology Edition Quarterly CPU – Jul 2020 – Includes Oracle Jul 2020 CPU plus one additional vulnerability affects Liberty for Java for IBM Cloud', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-ibm-sdk-java-technology-edition-quarterly-cpu-jul-2020-includes-oracle-jul-2020-cpu-plus-one-additional-vulnerability-affects-liberty-for-java-for-ibm-cloud/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6331801'}
+2020-09-11 11:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6331801>
+{'description': 'Multiple Vulnerabilities in IBM® SDK, Java™ Technology Edition affect Liberty for Java July 2020 CPU.', 'cveCode': 'CVE-2020-14593', 'score': '7.4', 'title': 'IBM® SDK, Java™ Technology Edition Quarterly CPU – Jul 2020 – Includes Oracle Jul 2020 CPU plus one additional vulnerability affects Liberty for Java for IBM Cloud', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-ibm-sdk-java-technology-edition-quarterly-cpu-jul-2020-includes-oracle-jul-2020-cpu-plus-one-additional-vulnerability-affects-liberty-for-java-for-ibm-cloud/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6331801'}
+2020-09-11 11:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6331801>
+{'description': 'Multiple Vulnerabilities in IBM® SDK, Java™ Technology Edition affect Liberty for Java July 2020 CPU.', 'cveCode': 'CVE-2020-14621', 'score': '5.3', 'title': 'IBM® SDK, Java™ Technology Edition Quarterly CPU – Jul 2020 – Includes Oracle Jul 2020 CPU plus one additional vulnerability affects Liberty for Java for IBM Cloud', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-ibm-sdk-java-technology-edition-quarterly-cpu-jul-2020-includes-oracle-jul-2020-cpu-plus-one-additional-vulnerability-affects-liberty-for-java-for-ibm-cloud/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6331801'}
+2020-09-11 11:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6331801>
+{'description': 'Multiple Vulnerabilities in IBM® SDK, Java™ Technology Edition affect Liberty for Java July 2020 CPU.', 'cveCode': 'CVE-2020-14556', 'score': '4.8', 'title': 'IBM® SDK, Java™ Technology Edition Quarterly CPU – Jul 2020 – Includes Oracle Jul 2020 CPU plus one additional vulnerability affects Liberty for Java for IBM Cloud', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-ibm-sdk-java-technology-edition-quarterly-cpu-jul-2020-includes-oracle-jul-2020-cpu-plus-one-additional-vulnerability-affects-liberty-for-java-for-ibm-cloud/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6331801'}
+2020-09-11 11:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6331801>
+{'description': 'Multiple Vulnerabilities in IBM® SDK, Java™ Technology Edition affect Liberty for Java July 2020 CPU.', 'cveCode': 'CVE-2020-14581', 'score': '3.7', 'title': 'IBM® SDK, Java™ Technology Edition Quarterly CPU – Jul 2020 – Includes Oracle Jul 2020 CPU plus one additional vulnerability affects Liberty for Java for IBM Cloud', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-ibm-sdk-java-technology-edition-quarterly-cpu-jul-2020-includes-oracle-jul-2020-cpu-plus-one-additional-vulnerability-affects-liberty-for-java-for-ibm-cloud/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6331801'}
+2020-09-11 11:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6331801>
+{'description': 'Multiple Vulnerabilities in IBM® SDK, Java™ Technology Edition affect Liberty for Java July 2020 CPU.', 'cveCode': 'CVE-2020-14579', 'score': '3.7', 'title': 'IBM® SDK, Java™ Technology Edition Quarterly CPU – Jul 2020 – Includes Oracle Jul 2020 CPU plus one additional vulnerability affects Liberty for Java for IBM Cloud', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-ibm-sdk-java-technology-edition-quarterly-cpu-jul-2020-includes-oracle-jul-2020-cpu-plus-one-additional-vulnerability-affects-liberty-for-java-for-ibm-cloud/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6331801'}
+2020-09-11 11:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6331801>
+{'description': 'Multiple Vulnerabilities in IBM® SDK, Java™ Technology Edition affect Liberty for Java July 2020 CPU.', 'cveCode': 'CVE-2020-14578', 'score': '3.7', 'title': 'IBM® SDK, Java™ Technology Edition Quarterly CPU – Jul 2020 – Includes Oracle Jul 2020 CPU plus one additional vulnerability affects Liberty for Java for IBM Cloud', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-ibm-sdk-java-technology-edition-quarterly-cpu-jul-2020-includes-oracle-jul-2020-cpu-plus-one-additional-vulnerability-affects-liberty-for-java-for-ibm-cloud/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6331801'}
+2020-09-11 11:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6331801>
+{'description': 'Multiple Vulnerabilities in IBM® SDK, Java™ Technology Edition affect Liberty for Java July 2020 CPU.', 'cveCode': 'CVE-2020-14577', 'score': '3.7', 'title': 'IBM® SDK, Java™ Technology Edition Quarterly CPU – Jul 2020 – Includes Oracle Jul 2020 CPU plus one additional vulnerability affects Liberty for Java for IBM Cloud', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-ibm-sdk-java-technology-edition-quarterly-cpu-jul-2020-includes-oracle-jul-2020-cpu-plus-one-additional-vulnerability-affects-liberty-for-java-for-ibm-cloud/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6331801'}
+2020-09-11 11:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6331801>
+{'description': 'Multiple Vulnerabilities in IBM® SDK, Java™ Technology Edition affect Liberty for Java July 2020 CPU.', 'cveCode': 'CVE-2019-17639', 'score': '5.3', 'title': 'IBM® SDK, Java™ Technology Edition Quarterly CPU – Jul 2020 – Includes Oracle Jul 2020 CPU plus one additional vulnerability affects Liberty for Java for IBM Cloud', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-ibm-sdk-java-technology-edition-quarterly-cpu-jul-2020-includes-oracle-jul-2020-cpu-plus-one-additional-vulnerability-affects-liberty-for-java-for-ibm-cloud/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6331801'}
+2020-09-11 11:39:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/support/pages/node/6330585> (referer: https://www.ibm.com/blogs/psirt/security-bulletin-ibm-db2-on-aix-and-linux-affected-by-a-vulnerability-in-ibm-spectrum-scale-cve-2020-4411/)
+2020-09-11 11:39:46 [root] INFO: start call_url
+2020-09-11 11:39:46 [root] INFO: start parseCveExtInfo
+2020-09-11 11:39:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6330585>
+{'description': 'The Spectrum Scale 4.2.0.0 through 4.2.3.21 and 5.0.0.0 through 5.0.4.3 file system component is affected by a denial of service vulnerability in its kernel module that could allow an attacker to cause a denial of service condition on the affected system. To exploit this vulnerability, a local attacker could invoke a subset of ioctls on the Spectrum Scale device with non-valid arguments. This could allow the attacker to crash the kernel.  IBM Spectrum Scale is previously known as General Parallel File System (GPFS).', 'cveCode': 'CVE-2020-4411', 'score': '7.1', 'title': 'IBM® Db2®  on AIX and Linux Affected by a Vulnerability in IBM® Spectrum Scale (CVE-2020-4411)', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-ibm-db2-on-aix-and-linux-affected-by-a-vulnerability-in-ibm-spectrum-scale-cve-2020-4411/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6330585'}
+2020-09-11 11:39:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ibm.com/support/pages/node/6331799> (referer: https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-may-affect-ibm-sdk-java-technology-edition-used-in-liberty-for-java-for-ibm-cloud-cve-2020-2590/)
+2020-09-11 11:39:48 [root] INFO: start call_url
+2020-09-11 11:39:48 [root] INFO: start parseCveExtInfo
+2020-09-11 11:39:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ibm.com/support/pages/node/6331799>
+{'description': 'CVE-2020-2590 was disclosed in the Oracle January 2020 Critical Patch Update.', 'cveCode': 'CVE-2020-2590', 'score': '3.7', 'title': 'A vulnerability may affect IBM® SDK, Java™ Technology Edition used in Liberty for Java for IBM Cloud (CVE-2020-2590)', 'detailUrl': 'https://www.ibm.com/blogs/psirt/security-bulletin-a-vulnerability-may-affect-ibm-sdk-java-technology-edition-used-in-liberty-for-java-for-ibm-cloud-cve-2020-2590/', 'releaseTime': 'Sep 10, 2020 8:00 pm EDT', 'dataSource': 'IBM', 'sourceBulletinUrl': 'https://www.ibm.com/support/pages/node/6331799'}
+2020-09-11 11:39:48 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-09-11 11:39:48 [scrapy.extensions.feedexport] INFO: Stored csv feed (25 items) in: data.csv
+2020-09-11 11:39:48 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 23658,
+ 'downloader/request_count': 19,
+ 'downloader/request_method_count/GET': 19,
+ 'downloader/response_bytes': 186372,
+ 'downloader/response_count': 19,
+ 'downloader/response_status_count/200': 19,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 9, 11, 3, 39, 48, 658463),
+ 'item_scraped_count': 25,
+ 'log_count/DEBUG': 44,
+ 'log_count/INFO': 49,
+ 'memusage/max': 58359808,
+ 'memusage/startup': 58359808,
+ 'request_depth_max': 2,
+ 'response_received_count': 19,
+ 'scheduler/dequeued': 19,
+ 'scheduler/dequeued/memory': 19,
+ 'scheduler/enqueued': 19,
+ 'scheduler/enqueued/memory': 19,
+ 'start_time': datetime.datetime(2020, 9, 11, 3, 39, 3, 996553)}
+2020-09-11 11:39:48 [scrapy.core.engine] INFO: Spider closed (finished)
