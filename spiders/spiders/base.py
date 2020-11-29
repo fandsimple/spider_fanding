@@ -91,7 +91,7 @@ class BaseSpider(scrapy.Spider, Tils):
     # today_latest_item_data = {}
     resInfo = {}
 
-    def __init__(self, taskId, taskType, sourceUrls='', spiderType=''):
+    def __init__(self, taskId, taskType, sourceUrls='', spiderType='', startUrls='', **kwargs):
         super(BaseSpider, self).__init__()
         self.runIp = self.get_ip()
         self.taskType = taskType
@@ -100,7 +100,7 @@ class BaseSpider(scrapy.Spider, Tils):
         self.sourceUrls = sourceUrls
         self.backend_host = backend_host
         ignore_type_list = ['test', 'update']
-        ignore_source_list = ['microsoft', 'oracle', 'new_microsoft']
+        ignore_source_list = ['microsoft', 'oracle', 'new_microsoft', 'z01']
         if self.spiderType not in ignore_type_list and self.name not in ignore_source_list:
             self.latestDataInfo = self.get_latest_data()  # 获取抓取过的最近数据
         else:
@@ -271,7 +271,7 @@ class BaseSpider(scrapy.Spider, Tils):
 
     def close(self):
         logging.info('start close')
-        ignore_list = ['microsoft', 'oracle', 'new_microsoft']
+        ignore_list = ['microsoft', 'oracle', 'new_microsoft', 'z01']
         ignore_type_list = ['test', 'update']
         if self.taskType not in ignore_type_list and self.name not in ignore_list:
             self.set_latest_data()  # 设置最新数据
