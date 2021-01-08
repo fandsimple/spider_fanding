@@ -56,7 +56,7 @@ def http_post(url, data):
 
 
 env_dist = os.environ # 获取节点名称（不同节点可以执行不同任务）
-node_name = env_dist.get('NODE_NAME', 'default')
+node_name = env_dist.get('NODE_NAME', 'all')
 # node_name = 'spider'
 flag = True
 while flag:
@@ -75,7 +75,22 @@ while flag:
             logging.info('no task')
             time.sleep(3)
             continue
+
         redisTaskData = res.get('msg')
+
+        # 检查父任务是否执行完毕
+        data = {
+            'parentId': redisTaskData.get('parentTaskId')
+        }
+        if data.get('parentId') != 0:
+            url = 'http://%s:%s/spidertask/checkparenttask/' % (host, port)
+            res = http_post(url=url, data=data)  # 请求将要执行的task
+            if res.get('code') != 200:
+                raise ValueError('获取任务执行状态失败')
+            if res.get('msg') != 'true':
+                logging.info('任务id:%d的父任务id:%d没有执行完毕' % (redisTaskData.get('id'), redisTaskData.get('parentTaskId')))
+                time.sleep(3)
+                continue
 
         # 同步任务状态，将数据库中对应任务状态改为running
         data = {

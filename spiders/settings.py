@@ -62,7 +62,7 @@ DEFAULT_REQUEST_HEADERS = {
 DOWNLOADER_MIDDLEWARES = {
    # 'spiders.middlewares.SpidersDownloaderMiddleware': 543,
    'spiders.downloaderMiddlewares.userAgentMiddleware.randomUserAgentDownloaderMiddleware': 501,
-   'spiders.downloaderMiddlewares.httpProxyMiddleware.HttpProxyMiddleware': 502,
+   # 'spiders.downloaderMiddlewares.httpProxyMiddleware.HttpProxyMiddleware': 502,
 }
 
 # Enable or disable extensions

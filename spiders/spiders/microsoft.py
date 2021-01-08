@@ -34,7 +34,7 @@ class MicrosoftSpider(BaseSpider):
         # 发起列表页请求
         # data = '{"familyIds":[],"productIds":[],"severityIds":[],"impactIds":[100000005,100000002,100000001,100000007,100000003,100000006,100000009,100000008,100000000,100000004,0],"pageNumber":1,"pageSize":20,"includeCveNumber":true,"includeSeverity":true,"includeImpact":true,"orderBy":"publishedDate","orderByMonthly":"releaseDate","isDescending":true,"isDescendingMonthly":true,"queryText":"","isSearch":false,"filterText":"","fromPublishedDate":"%s","toPublishedDate":"%s"}' % (self.get_date(today='preday'), self.get_date(today='today'))
         data = '{"familyIds":[],"productIds":[],"severityIds":[],"impactIds":[100000005,100000002,100000001,100000007,100000003,100000006,100000009,100000008,100000000,100000004,0],"pageNumber":1,"pageSize":20,"includeCveNumber":true,"includeSeverity":true,"includeImpact":true,"orderBy":"publishedDate","orderByMonthly":"releaseDate","isDescending":true,"isDescendingMonthly":true,"queryText":"","isSearch":false,"filterText":"","fromPublishedDate":"%s","toPublishedDate":"%s"}' % (
-        '9/17/2020/', self.get_date(today='today'))
+        '11/11/2020/', self.get_date(today='today'))
         # data = '{"familyIds":[],"productIds":[],"severityIds":[],"impactIds":[100000005,100000002,100000001,100000007,100000003,100000006,100000009,100000008,100000000,100000004,0],"pageNumber":1,"pageSize":20,"includeCveNumber":true,"includeSeverity":true,"includeImpact":true,"orderBy":"impact","orderByMonthly":"releaseDate","isDescending":true,"isDescendingMonthly":true,"queryText":"","isSearch":false,"filterText":"","fromPublishedDate":"10/15/2020","toPublishedDate":"10/15/2020"}'
 
         headers = {

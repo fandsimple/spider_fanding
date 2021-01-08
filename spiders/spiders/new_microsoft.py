@@ -22,8 +22,8 @@ class NewMicrosoftSpider(BaseSpider):
     # start_urls = ['https://portal.msrc.microsoft.com/api/security-guidance/zh-cn']
     parsePage = 'parseExcel'
 
-    contentPath = 'src/microsoft/2020_11_11.xlsx'
-    contentTitlePath = 'src/microsoft/2020_11_11_title.xlsx'
+    contentPath = 'src/microsoft/2020_12_09.xlsx'
+    contentTitlePath = 'src/microsoft/2020_12_09_title.xlsx'
 
     custom_settings = {
         'CONCURRENT_REQUESTS': 1,

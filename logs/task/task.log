@@ -1,0 +1,113 @@
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/getredistask/ HTTP/1.1" 200 318
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/changetaskstatus/ HTTP/1.1" 404 4478
+ERROR:root:Traceback (most recent call last):
+  File "task.py", line 52, in http_post
+    ret = json.loads(ret.text)
+  File "/Users/fanding/.pyenv/versions/3.6.7/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/fanding/.pyenv/versions/3.6.7/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/fanding/.pyenv/versions/3.6.7/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+ERROR:root:Traceback (most recent call last):
+  File "task.py", line 83, in <module>
+    'taskId': redisTaskData.get('taskId'),
+AttributeError: 'Response' object has no attribute 'get'
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/getredistask/ HTTP/1.1" 200 318
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 54
+ERROR:root:Traceback (most recent call last):
+  File "task.py", line 83, in <module>
+    'taskId': redisTaskData.get('taskId'),
+ValueError: id为5的nvd在从状态ready修改为running状态时出错
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 54
+INFO:root:time is 2020-11-29 20:45:48********************
+
+
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/getredistask/ HTTP/1.1" 200 318
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 54
+ERROR:root:Traceback (most recent call last):
+  File "task.py", line 79, in <module>
+    pdb.set_trace()
+ValueError: id为4的ibm在从状态ready修改为running状态时出错
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/getredistask/ HTTP/1.1" 200 318
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 60
+INFO:root:cmd:scrapy crawl ibm -a taskId=1 -a taskType="spider" -a startUrls="" -a sourceUrls=""
+ERROR:root:Traceback (most recent call last):
+  File "task.py", line 113, in <module>
+    (cmdStatus, output) = subprocess.getstatusoutput(cmd)
+ValueError: 爬虫执行失败，具体信息为:scrapy crawl ibm -a taskId=1 -a taskType="spider" -a startUrls="" -a sourceUrls=""
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 60
+INFO:root:time is 2020-11-29 21:06:05********************
+
+
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/getredistask/ HTTP/1.1" 200 318
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 60
+INFO:root:cmd:scrapy crawl ibm -a taskId=1 -a taskType="spider" -a startUrls="" -a sourceUrls=""
+ERROR:root:Traceback (most recent call last):
+  File "task.py", line 113, in <module>
+    (cmdStatus, output) = subprocess.getstatusoutput(cmd)
+ValueError: 爬虫执行失败，具体信息为:scrapy crawl ibm -a taskId=1 -a taskType="spider" -a startUrls="" -a sourceUrls=""
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 60
+INFO:root:time is 2020-11-29 21:10:43********************
+
+
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/getredistask/ HTTP/1.1" 200 318
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 60
+INFO:root:cmd:scrapy crawl ibm -a taskId=1 -a taskType="spider" -a startUrls="" -a sourceUrls=""
+ERROR:root:Traceback (most recent call last):
+  File "task.py", line 113, in <module>
+    (cmdStatus, output) = subprocess.getstatusoutput(cmd)
+ValueError: 爬虫执行失败，具体信息为:scrapy crawl ibm -a taskId=1 -a taskType="spider" -a startUrls="" -a sourceUrls=""
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 60
+INFO:root:time is 2020-11-29 21:14:44********************
+
+
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/getredistask/ HTTP/1.1" 200 318
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 60
+INFO:root:cmd:scrapy crawl ibm -a taskId=1 -a taskType="spider" -a startUrls="" -a sourceUrls=""
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/getredistask/ HTTP/1.1" 200 318
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 60
+INFO:root:cmd:scrapy crawl ibm -a taskId=1 -a taskType="spider" -a startUrls="" -a sourceUrls=""
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 60
+INFO:root:time is 2020-11-29 21:20:27********************
+
+
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/getredistask/ HTTP/1.1" 200 318
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:8000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:8000 "POST /spidertask/updatetaskstatus/ HTTP/1.1" 200 60
+INFO:root:cmd:scrapy crawl ibm -a taskId=1 -a taskType="spider" -a startUrls="" -a sourceUrls=""
